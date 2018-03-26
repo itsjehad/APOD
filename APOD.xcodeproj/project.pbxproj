@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		19F09BADF0DE02FE6B3360D4 /* Pods_APODTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CC09D8AA1E9532F587EAFA /* Pods_APODTests.framework */; };
 		889B3161206885D500B1F5FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B3160206885D500B1F5FE /* AppDelegate.swift */; };
-		889B3163206885D500B1F5FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B3162206885D500B1F5FE /* ViewController.swift */; };
-		889B3166206885D500B1F5FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889B3164206885D500B1F5FE /* Main.storyboard */; };
+		889B3163206885D500B1F5FE /* APODListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B3162206885D500B1F5FE /* APODListViewController.swift */; };
+		889B3166206885D500B1F5FE /* APOD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889B3164206885D500B1F5FE /* APOD.storyboard */; };
 		889B3168206885D500B1F5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889B3167206885D500B1F5FE /* Assets.xcassets */; };
 		889B316B206885D500B1F5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889B3169206885D500B1F5FE /* LaunchScreen.storyboard */; };
 		889B3176206885D600B1F5FE /* APODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B3175206885D600B1F5FE /* APODTests.swift */; };
 		889B3181206885D600B1F5FE /* APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B3180206885D600B1F5FE /* APODUITests.swift */; };
+		889B3192206893DA00B1F5FE /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B318F206893D900B1F5FE /* APODViewModel.swift */; };
+		889B3193206893DA00B1F5FE /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B3190206893D900B1F5FE /* APODModel.swift */; };
+		889B3194206893DA00B1F5FE /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B3191206893D900B1F5FE /* Media.swift */; };
 		B990F9231679007E1418CE6F /* Pods_APODUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107245D79D31594260504EE8 /* Pods_APODUITests.framework */; };
 		E1379DC69D4782BBB78BB411 /* Pods_APOD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2BA8CD6A7681B2BCE5A1A2 /* Pods_APOD.framework */; };
 /* End PBXBuildFile section */
@@ -44,8 +47,8 @@
 		85BDC472AEC4C284BAAED494 /* Pods-APOD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APOD/Pods-APOD.debug.xcconfig"; sourceTree = "<group>"; };
 		889B315D206885D500B1F5FE /* APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889B3160206885D500B1F5FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		889B3162206885D500B1F5FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		889B3165206885D500B1F5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		889B3162206885D500B1F5FE /* APODListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODListViewController.swift; sourceTree = "<group>"; };
+		889B3165206885D500B1F5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/APOD.storyboard; sourceTree = "<group>"; };
 		889B3167206885D500B1F5FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		889B316A206885D500B1F5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		889B316C206885D500B1F5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		889B317C206885D600B1F5FE /* APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889B3180206885D600B1F5FE /* APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITests.swift; sourceTree = "<group>"; };
 		889B3182206885D600B1F5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889B318F206893D900B1F5FE /* APODViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		889B3190206893D900B1F5FE /* APODModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
+		889B3191206893D900B1F5FE /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		9F56D342AE3CEB339A576E21 /* Pods-APODTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APODTests/Pods-APODTests.release.xcconfig"; sourceTree = "<group>"; };
 		D7CC09D8AA1E9532F587EAFA /* Pods_APODTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APODTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7A6E54ADCD6F29F80791FA /* Pods-APOD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOD.release.xcconfig"; path = "Pods/Target Support Files/Pods-APOD/Pods-APOD.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,9 +130,11 @@
 		889B315F206885D500B1F5FE /* APOD */ = {
 			isa = PBXGroup;
 			children = (
+				889B319620689F7600B1F5FE /* Views */,
+				889B319520689F5100B1F5FE /* Scenes */,
+				889B318E206893AE00B1F5FE /* Models */,
 				889B3160206885D500B1F5FE /* AppDelegate.swift */,
-				889B3162206885D500B1F5FE /* ViewController.swift */,
-				889B3164206885D500B1F5FE /* Main.storyboard */,
+				889B3162206885D500B1F5FE /* APODListViewController.swift */,
 				889B3167206885D500B1F5FE /* Assets.xcassets */,
 				889B3169206885D500B1F5FE /* LaunchScreen.storyboard */,
 				889B316C206885D500B1F5FE /* Info.plist */,
@@ -150,6 +158,31 @@
 				889B3182206885D600B1F5FE /* Info.plist */,
 			);
 			path = APODUITests;
+			sourceTree = "<group>";
+		};
+		889B318E206893AE00B1F5FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				889B3190206893D900B1F5FE /* APODModel.swift */,
+				889B318F206893D900B1F5FE /* APODViewModel.swift */,
+				889B3191206893D900B1F5FE /* Media.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		889B319520689F5100B1F5FE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				889B3164206885D500B1F5FE /* APOD.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		889B319620689F7600B1F5FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9D2311844C8DA49C9C1423D6 /* Pods */ = {
@@ -283,7 +316,7 @@
 			files = (
 				889B316B206885D500B1F5FE /* LaunchScreen.storyboard in Resources */,
 				889B3168206885D500B1F5FE /* Assets.xcassets in Resources */,
-				889B3166206885D500B1F5FE /* Main.storyboard in Resources */,
+				889B3166206885D500B1F5FE /* APOD.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,9 +394,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-APOD/Pods-APOD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -439,9 +489,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-APODTests/Pods-APODTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -455,8 +522,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889B3163206885D500B1F5FE /* ViewController.swift in Sources */,
+				889B3163206885D500B1F5FE /* APODListViewController.swift in Sources */,
 				889B3161206885D500B1F5FE /* AppDelegate.swift in Sources */,
+				889B3192206893DA00B1F5FE /* APODViewModel.swift in Sources */,
+				889B3193206893DA00B1F5FE /* APODModel.swift in Sources */,
+				889B3194206893DA00B1F5FE /* Media.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,12 +562,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		889B3164206885D500B1F5FE /* Main.storyboard */ = {
+		889B3164206885D500B1F5FE /* APOD.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				889B3165206885D500B1F5FE /* Base */,
 			);
-			name = Main.storyboard;
+			name = APOD.storyboard;
 			sourceTree = "<group>";
 		};
 		889B3169206885D500B1F5FE /* LaunchScreen.storyboard */ = {
@@ -545,6 +615,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -559,6 +630,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -602,6 +674,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -610,6 +683,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -625,6 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BSS78JSK2;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = APOD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sarkar.APOD;
@@ -641,6 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BSS78JSK2;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = APOD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sarkar.APOD;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="APODListViewController" customModule="APOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANP-Lf-0nJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6s-Dg-IBG" customClass="EmptyView" customModule="CuratedPhotos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZmN-dq-ID6">
+                                <rect key="frame" x="0.0" y="-0.5" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="sZC-0s-7c0" customClass="LoadMoreView" customModule="CuratedPhotos" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x6s-Dg-IBG" firstAttribute="centerX" secondItem="ANP-Lf-0nJ" secondAttribute="centerX" id="8HP-JB-hmP"/>
+                            <constraint firstItem="ZmN-dq-ID6" firstAttribute="width" secondItem="ANP-Lf-0nJ" secondAttribute="width" id="FNS-pb-oWv"/>
+                            <constraint firstItem="x6s-Dg-IBG" firstAttribute="height" secondItem="ANP-Lf-0nJ" secondAttribute="height" id="GuV-4H-kW5"/>
+                            <constraint firstItem="x6s-Dg-IBG" firstAttribute="width" secondItem="ANP-Lf-0nJ" secondAttribute="width" id="QYE-gY-PQ6"/>
+                            <constraint firstItem="ZmN-dq-ID6" firstAttribute="height" secondItem="ANP-Lf-0nJ" secondAttribute="height" id="WDM-r5-jvL"/>
+                            <constraint firstItem="ZmN-dq-ID6" firstAttribute="centerX" secondItem="ANP-Lf-0nJ" secondAttribute="centerX" id="Z6R-gZ-tZ8"/>
+                            <constraint firstItem="ZmN-dq-ID6" firstAttribute="centerY" secondItem="ANP-Lf-0nJ" secondAttribute="centerY" id="eZN-eu-jFb"/>
+                            <constraint firstItem="x6s-Dg-IBG" firstAttribute="centerY" secondItem="ANP-Lf-0nJ" secondAttribute="centerY" id="l6G-zp-dKK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Esz-vL-zfL"/>
+                    </view>
+                </viewController>
+                <navigationItem title="Curated Photos" id="gQw-YI-bjL" userLabel="Photo of the day"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -6,7 +6,14 @@ target 'APOD' do
   use_frameworks!
 
   # Pods for APOD
-
+  pod 'Kingfisher'
+  pod 'ObjectMapper'
+  pod 'PureLayout'
+  pod 'R.swift'
+  pod 'RxAlamofire'
+  pod 'RxCocoa'
+  pod 'RxSwift'
+  
   target 'APODTests' do
     inherit! :search_paths
     # Pods for testing
